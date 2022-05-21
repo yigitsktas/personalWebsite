@@ -1,0 +1,85 @@
+.header1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 45px;
+	color: rgb(5, 59, 129);
+	font-weight: 1000;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	color: #333;
+	line-height: 1.5;
+	height: 100vh;
+	position: relative;
+	background: linear-gradient(to top left, rgb(192, 94, 38), #ffffff);
+}
+
+.show-modal {
+	font-size: 2rem;
+	font-weight: 800;
+	padding: 1rem 2rem;
+	margin: 5rem 2rem;
+	border-color: rgb(5, 59, 129);
+	color: rgb(5, 59, 129);
+	background-color: rgb(255, 255, 255);
+	border-radius: 800rem;
+	cursor: pointer;
+	-webkit-border-radius: 800rem;
+	-moz-border-radius: 800rem;
+	-ms-border-radius: 800rem;
+	-o-border-radius: 800rem;
+	float: right;
+}
+
+.close-modal {
+	position: absolute;
+	top: 1rem;
+	right: 2rem;
+	font-size: 5rem;
+	color: rgb(5, 59, 129);
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+p {
+	font-size: 1.8rem;
+	color: rgb(255, 255, 255);
+}
+
+.hidden {
+	display: none;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	background: linear-gradient(to top, rgb(5, 59, 129), #ffffff);
+	padding: 16rem;
+	border-radius: 2px;
+	box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+	z-index: 10;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	z-index: 5;
+}
