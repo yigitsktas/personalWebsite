@@ -1,30 +1,51 @@
 "use strict";
 
-const modal = document.querySelector(".modal");
+const modalAbout = document.querySelector(".modal-about");
+const modalLinks = document.querySelector(".modal-links");
 const overlay = document.querySelector(".overlay");
-const btnCloseModal = document.querySelector(".close-modal");
-const btnOpenModal = document.querySelectorAll(".show-modal");
+const btnCloseModalAbout = document.querySelector(".close-modal-about");
+const btnCloseModalLinks = document.querySelector(".close-modal-links");
+const btnOpenModalAbout = document.querySelector(".show-modal-about");
+const btnOpenModalLinks = document.querySelector(".show-modal-links");
 
-const openModal = function () {
-	modal.classList.remove("hidden");
+// todo: try using one function but it not works with one function!!
+// todo: so i had to use less functions but i could not figure it out
+const openModalAbout = function () {
+	modalAbout.classList.remove("hidden");
 	overlay.classList.remove("hidden");
 };
 
-const closeModal = function () {
-	modal.classList.add("hidden");
+const openModalLinks = function () {
+	modalLinks.classList.remove("hidden");
+	overlay.classList.remove("hidden");
+};
+
+const closeModalAbout = function () {
+	modalAbout.classList.add("hidden");
 	overlay.classList.add("hidden");
 };
 
-for (let i = 0; i < btnOpenModal.length; i++)
-	btnOpenModal[i].addEventListener("click", openModal);
+const closeModalLinks = function () {
+	modalLinks.classList.add("hidden");
+	overlay.classList.add("hidden");
+};
 
-btnCloseModal.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+btnOpenModalAbout.addEventListener("click", openModalAbout);
+btnOpenModalLinks.addEventListener("click", openModalLinks);
+
+btnCloseModalAbout.addEventListener("click", closeModalAbout);
+btnCloseModalLinks.addEventListener("click", closeModalLinks);
+
+overlay.addEventListener("click", closeModalAbout);
+overlay.addEventListener("click", closeModalLinks);
 
 document.addEventListener("keydown", function (e) {
 	// console.log(e.key);
 
-	if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+	if (
+		(e.key === "Escape" && !modalAbout.classList.contains("hidden")) ||
+		!modalLinks.classList.contains("hidden")
+	) {
 		closeModal();
 	}
 });

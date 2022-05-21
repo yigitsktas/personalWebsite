@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 
 <head>
-  
+
   <link rel="stylesheet" href="stylesheet.css">
 
-  <title>Welcome</title>
+  <title>Merhaba</title>
 
 </head>
 
-<body>
+<body class>
 
-<h class = "header1">.yigitsktas</h>
+<h class = "header1">
+  <a href="home.html" class = "home">.yigitsktas</a>
+</h>
 
-<button class="show-modal">About Me</button>
+<button class="show-modal-links">My Links</button>
+<button class="show-modal-about">About Me</button>
 
-<div class="modal hidden">
-  <button class="close-modal">&times;</button>
-  <p>
-  ...
+<!-- if overlay stays here it work -->
+<div class="overlay hidden">
+</div>
+
+<div class="modal-about hidden">
+  <button class="close-modal-about">&times;</button>
+  <p class = p-about>
+  I'm Yiğit Sıktaş, 22 years old computer engineering student, who is new at web design.
   </p>
 </div>
 
-<div class="overlay hidden">
+<div class="modal-links hidden">
+  <button class="close-modal-links">&times;</button>
+  <p class = p-links>
+  <a class = my-links href="https://github.com/yigitsktas" target="_blank"/a>🖥️ GitHub
+  </p>
 </div>
+
+<!-- if overlay stays here whenever I click empty side (hidden overlay) of page link opens -->
 
 <script src="js.js"></script>
 
