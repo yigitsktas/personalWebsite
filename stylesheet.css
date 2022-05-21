@@ -44,19 +44,41 @@ body {
 
 .p-links {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 3rem;
+	font-size: 2.8rem;
 	font-weight: bold;
 	color: rgb(91, 37, 219);
 }
 
 .my-links {
 	text-decoration: none;
+	display: inline;
 	color: rgb(91, 37, 219);
 }
+
+.my-links::after{
+	content:"\a\a";
+    white-space: pre ;
+}
+
 
 .my-links:hover {
 	color: rgb(0, 0, 0);
 }
+
+.link-logo-git{
+	width: 30px;
+	height: 27px;
+	float: left;
+	margin: 0px 2.3px;
+}
+
+.link-logo-linkedin{
+	width: 25px;
+	height: 24px;
+	float: left;
+	margin: 1px 6px;
+}
+
 
 .show-modal-about {
 	font-size: 2rem;
@@ -196,7 +218,8 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 35%;
+	height: 23%;
+	width: 23%;
 	background-color: #ffffff;
 	padding: 10rem;
 	border-radius: 40px;
