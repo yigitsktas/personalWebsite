@@ -14,10 +14,13 @@
 	color: rgb(91, 37, 219);
 	font-weight: 800;
 	font-style: italic;
-	filter: blur(1px);
-	-webkit-filter: blur(1px);
-	/*background-image: linear-gradient(45deg, #f3ec78, #af4261);
-	*/
+	transition: 2s;
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+	-ms-transition: 2s;
+	-o-transition: 2s;
 }
 
 .main-header:hover {
@@ -25,9 +28,13 @@
 	text-decoration: none;
 	padding: 0.3rem 0.3rem;
 	margin: 305px 509px;
-	transition: all 0.5s;
+	transition: all 1.5s;
 	filter: blur(0px);
 	-webkit-filter: url(0px);
+	-webkit-transition: all 1.5s;
+	-moz-transition: all 1.5s;
+	-ms-transition: all 1.5s;
+	-o-transition: all 1.5s;
 }
 
 .home {
@@ -56,7 +63,7 @@ body {
 	line-height: 1;
 	height: 100vh;
 	position: relative;
-	background: linear-gradient(to top left, rgb(91, 37, 219), #ffffff);
+	background: linear-gradient(to bottom, #f3ec78, #af4261);
 }
 
 .p-about {
