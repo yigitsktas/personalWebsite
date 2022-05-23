@@ -7,6 +7,9 @@ const btnCloseModalAbout = document.querySelector(".close-modal-about");
 const btnCloseModalLinks = document.querySelector(".close-modal-links");
 const btnOpenModalAbout = document.querySelector(".show-modal-about");
 const btnOpenModalLinks = document.querySelector(".show-modal-links");
+const merhabaAlert = document.querySelector(".main-header");
+const portfolioButton = document.querySelector(".btn-portfolio");
+
 
 // todo: try using one function but it not works with one function!!
 // todo: so i had to use less functions but i could not figure it out
@@ -39,9 +42,9 @@ btnCloseModalLinks.addEventListener("click", closeModalLinks);
 overlay.addEventListener("click", closeModalAbout);
 overlay.addEventListener("click", closeModalLinks);
 
+// close modals with pressing esc
 document.addEventListener("keydown", function (e) {
 	// console.log(e.key);
-
 	if (
 		(e.key === "Escape" && !modalAbout.classList.contains("hidden")) ||
 		!modalLinks.classList.contains("hidden")
@@ -50,10 +53,14 @@ document.addEventListener("keydown", function (e) {
 	}
 });
 
+// alert chrome
+merhabaAlert.addEventListener("click", function () {
+	alert("merhaba.");
+});
 
-const merhabaAlert = document.querySelector(".main-header")
-merhabaAlert.addEventListener("click", function(){
-	alert("merhaba.")	
-}
+// opens portfolio page on top
+portfolioButton.addEventListener("click", function () {
+	window.open("portfolio.html", "_top");
+});
 
-)
+//todo: portfolio home button not working right now
