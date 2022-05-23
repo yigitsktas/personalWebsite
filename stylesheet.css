@@ -8,7 +8,6 @@
 
 .main-header {
 	font-family: Arial, Helvetica, sans-serif;
-	margin: 300px 500px;
 	text-align: center;
 	font-size: 200px;
 	color: rgb(91, 37, 219);
@@ -16,12 +15,22 @@
 	font-style: italic;
 	transition: 2s;
 	filter: blur(10px);
+	position: absolute;
 	-webkit-filter: blur(10px);
 	-webkit-transition: 2s;
 	-moz-transition: 2s;
 	-ms-transition: 2s;
 	-o-transition: 2s;
+	position:fixed; 
+    top:0;
+    left:0;
+    right:0; 
+    bottom:0; 
+    width:auto; 
+    height:200px; 
+	margin:auto;
 }
+
 
 .main-header:hover {
 	color: rgb(91, 37, 219);
@@ -35,6 +44,14 @@
 	-moz-transition: all 1.5s;
 	-ms-transition: all 1.5s;
 	-o-transition: all 1.5s;
+	position:fixed; 
+    top:0;
+    left:0;
+    right:1; 
+    bottom:10; 
+    width:auto; 
+    height:200px; 
+	margin:auto;
 }
 
 .home {
@@ -60,10 +77,10 @@ html {
 }
 
 body {
-	line-height: 1;
-	height: 100vh;
 	position: relative;
-	background: linear-gradient(to bottom, #f3ec78, #af4261);
+	background: linear-gradient(to bottom, #f3ec78, #af4261) fixed;
+	/* background-color: #f3ec78; */
+	background-repeat: no-repeat;
 }
 
 .p-about {

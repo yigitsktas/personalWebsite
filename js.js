@@ -49,3 +49,11 @@ document.addEventListener("keydown", function (e) {
 		closeModal();
 	}
 });
+
+
+const merhabaAlert = document.querySelector(".main-header")
+merhabaAlert.addEventListener("click", function(){
+	alert("merhaba.")	
+}
+
+)
