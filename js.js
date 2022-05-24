@@ -53,6 +53,16 @@ document.addEventListener("keydown", function (e) {
 	}
 });
 
+document.addEventListener("keydown", function (e) {
+	// console.log(e.key);
+	if (
+		(e.key === "Escape" && !modalAbout.classList.contains("hidden")) ||
+		!modalLinks.classList.contains("hidden")
+	) {
+		closeModal();
+	}
+});
+
 // alert chrome
 merhabaAlert.addEventListener("click", function () {
 	alert("merhaba.");
