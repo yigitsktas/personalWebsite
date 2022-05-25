@@ -2,9 +2,8 @@
 
 const modalAbout = document.querySelector(".modal-about");
 const modalLinks = document.querySelector(".modal-links");
+const btnCloseModal = document.querySelector(".close-modal");
 const overlay = document.querySelector(".overlay");
-const btnCloseModalAbout = document.querySelector(".close-modal-about");
-const btnCloseModalLinks = document.querySelector(".close-modal-links");
 const btnOpenModalAbout = document.querySelector(".show-modal-about");
 const btnOpenModalLinks = document.querySelector(".show-modal-links");
 const merhabaAlert = document.querySelector(".main-header");
@@ -23,12 +22,8 @@ const openModalLinks = function () {
 	overlay.classList.remove("hidden");
 };
 
-const closeModalAbout = function () {
+const closeModal = function () {
 	modalAbout.classList.add("hidden");
-	overlay.classList.add("hidden");
-};
-
-const closeModalLinks = function () {
 	modalLinks.classList.add("hidden");
 	overlay.classList.add("hidden");
 };
@@ -36,23 +31,11 @@ const closeModalLinks = function () {
 btnOpenModalAbout.addEventListener("click", openModalAbout);
 btnOpenModalLinks.addEventListener("click", openModalLinks);
 
-btnCloseModalAbout.addEventListener("click", closeModalAbout);
-btnCloseModalLinks.addEventListener("click", closeModalLinks);
+btnCloseModal.addEventListener("click", closeModal);
 
-overlay.addEventListener("click", closeModalAbout);
-overlay.addEventListener("click", closeModalLinks);
+overlay.addEventListener("click", closeModal);
 
 // close modals with pressing esc
-document.addEventListener("keydown", function (e) {
-	// console.log(e.key);
-	if (
-		(e.key === "Escape" && !modalAbout.classList.contains("hidden")) ||
-		!modalLinks.classList.contains("hidden")
-	) {
-		closeModal();
-	}
-});
-
 document.addEventListener("keydown", function (e) {
 	// console.log(e.key);
 	if (
@@ -73,4 +56,3 @@ portfolioButton.addEventListener("click", function () {
 	window.open("portfolio.html", "_top");
 });
 
-//todo: portfolio home button not working right now
