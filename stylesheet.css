@@ -60,14 +60,6 @@ body {
 	-moz-transition: all 1.5s;
 	-ms-transition: all 1.5s;
 	-o-transition: all 1.5s;
-	text-align: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 300px;
-	margin: auto;
 }
 
 .home {
