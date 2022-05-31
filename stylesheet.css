@@ -4,7 +4,6 @@ html {
 }
 
 body {
-	/* position: relative; */
 	background: linear-gradient(to bottom, #f3ec78, #af4261) fixed;
 	background-repeat: no-repeat;
 	margin: auto;
@@ -12,16 +11,14 @@ body {
 
 .top-bar {
 	margin: auto;
-	/* background-color: green; */
 }
 
 .top-header {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial;
 	font-size: 45px;
 	color: rgb(91, 37, 219);
 	font-weight: 800;
 	padding-top: 10px;
-	/* background-color: green; */
 }
 
 .header {
@@ -198,7 +195,6 @@ body {
 	-moz-border-radius: 1.1rem;
 	-ms-border-radius: 1.1rem;
 	-o-border-radius: 1.1rem;
-	float: right;
 	-webkit-transition: 0.3s ease;
 	-moz-transition: 0.3s ease;
 	-ms-transition: 0.3s ease;
@@ -235,17 +231,11 @@ body {
 	background-color: rgb(91, 37, 219);
 	border-radius: 1.1rem;
 	cursor: pointer;
-	float: right;
 	transition: 0.3s ease;
 	-webkit-border-radius: 1.1rem;
 	-moz-border-radius: 1.1rem;
 	-ms-border-radius: 1.1rem;
 	-o-border-radius: 1.1rem;
-	float: right;
-	-webkit-transition: ;
-	-moz-transition: ;
-	-ms-transition: ;
-	-o-transition: ;
 }
 
 .btn-portfolio {
@@ -253,6 +243,7 @@ body {
 	font-size: 2rem;
 	font-weight: 800;
 	padding: 0.7rem 1rem;
+	float: right;
 	margin: 1.4rem 1rem;
 	border-style: solid;
 	border-color: rgb(91, 37, 219);
@@ -260,12 +251,10 @@ body {
 	background-color: rgb(255, 255, 255);
 	border-radius: 3rem;
 	cursor: pointer;
-	float: right;
 	-webkit-border-radius: 3rem;
 	-moz-border-radius: 3rem;
 	-ms-border-radius: 3rem;
 	-o-border-radius: 3rem;
-	float: right;
 }
 
 .btn-portfolio:hover {
@@ -279,7 +268,6 @@ body {
 	background-color: rgb(91, 37, 219);
 	border-radius: 1.1rem;
 	cursor: pointer;
-	float: right;
 	transition: 0.3s ease;
 	-webkit-border-radius: 1.1rem;
 	-moz-border-radius: 1.1rem;
@@ -337,13 +325,14 @@ body {
 
 .close-modal {
 	position: absolute;
-	top: 2rem;
-	right: 3rem;
+	top: 1rem;
+	right: 1rem;
 	font-size: 5rem;
 	color: rgb(91, 37, 219);
-	cursor: pointer;
+	cursor: click;
 	border: none;
 	background: none;
+	padding: 0px 30px;
 }
 
 .hidden {
@@ -375,7 +364,6 @@ body {
 	-moz-border-radius: 800rem;
 	-ms-border-radius: 800rem;
 	-o-border-radius: 800rem;
-	float: right;
 }
 
 .btn-home:hover {

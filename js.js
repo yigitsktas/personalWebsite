@@ -9,7 +9,6 @@ const btnOpenModalLinks = document.querySelector(".show-modal-links");
 const merhabaAlert = document.querySelector(".main-header");
 const portfolioButton = document.querySelector(".btn-portfolio");
 
-
 // todo: try using one function but it not works with one function!!
 // todo: so i had to use less functions but i could not figure it out
 const openModalAbout = function () {
@@ -55,4 +54,3 @@ merhabaAlert.addEventListener("click", function () {
 portfolioButton.addEventListener("click", function () {
 	window.open("portfolio.html", "_top");
 });
-
