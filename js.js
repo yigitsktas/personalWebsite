@@ -10,7 +10,7 @@ const merhabaAlert = document.querySelector(".main-header");
 const portfolioButton = document.querySelector(".btn-portfolio");
 
 // todo: try using one function but it not works with one function!!
-// todo: so i had to use less functions but i could not figure it out
+// todo: so i had to use less functions but i could not figure it out yet
 const openModalAbout = function () {
 	modalAbout.classList.remove("hidden");
 	overlay.classList.remove("hidden");
